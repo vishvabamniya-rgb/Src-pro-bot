@@ -498,7 +498,6 @@ async def get_final_caption(msg, sender):
     final_caption = re.sub(r'@\w+', '𓍯𝙎𝙪𝙟𝙖𝙡⚝', final_caption)
 
     # Replace all links with your channel link
-    final_caption = re.sub(r'https?://\S+|www\.\S+', 'https://t.me/studywithsv', final_caption)
 
     # Perform additional replacements from user-defined rules
     replacements = load_replacement_words(sender)
@@ -632,7 +631,7 @@ async def send_media_message(app, target_chat_id, msg, caption, topic_id):
             # Add blockquote formatting
             caption = re.sub(
                 r'https?://t\.me/[^\s]+|https?://telegram\.me/[^\s]+',
-                'https://t.me/+7R-7p7jVoz9mM2M1',
+                '𓍯𝙎𝙪𝙟𝙖𝙡⚝',
                 caption
             )
             caption = "\n".join([f"> {line}" for line in caption.strip().splitlines()])
@@ -685,7 +684,7 @@ def format_caption(original_caption, sender, custom_caption):
     # ✅ Replace all URLs with your custom invite link
     original_caption = re.sub(
         r'https?://t\.me/[^\s]+|https?://telegram\.me/[^\s]+',
-        'https://t.me/studywithsv',
+        '𓍯𝙎𝙪𝙟𝙖𝙡⚝",
         original_caption
     )
     # ✅ Remove everything after 'Extracted By ...'
@@ -854,7 +853,7 @@ async def callback_query_handler(event):
         await event.respond("📸 Send the **photo** you want to use as your custom thumbnail.")
 
     elif data == 'pdfwt':
-        await event.respond("🔒 PDF watermarking is available for **Pro+ Plan** users.\n\n👉 Contact [@GeniusJunctionX](https://t.me/GeniusJunctionX) to upgrade.")
+        await event.respond("🔒 PDF watermarking is available for **Pro+ Plan** users.\n\n👉 Contact [�𝙎𝙪𝙟𝙖𝙡⚝](https://t.me/GeniusJunjctionX) to upgrade.")
 
 
     elif event.data == b'uploadmethod':
