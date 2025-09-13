@@ -684,7 +684,7 @@ def format_caption(original_caption, sender, custom_caption):
     # ✅ Replace all URLs with your custom invite link
     original_caption = re.sub(
         r'https?://t\.me/[^\s]+|https?://telegram\.me/[^\s]+',
-        '𓍯𝙎𝙪𝙟𝙖𝙡⚝",
+        '𓍯𝙎𝙪𝙟𝙖𝙡⚝',
         original_caption
     )
     # ✅ Remove everything after 'Extracted By ...'
